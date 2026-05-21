@@ -1,6 +1,6 @@
 (function () {
   var toggle = document.querySelector(".nav-toggle");
-  var nav = document.querySelector(".nav");
+  var nav = document.querySelector(".mobile-nav");
   var yearEl = document.getElementById("year");
 
   if (yearEl) {
