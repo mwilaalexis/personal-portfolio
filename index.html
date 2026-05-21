@@ -4,81 +4,142 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kilolo Mwila Alexis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <p class="name"><a href="#">Kilolo Mwila Alexis</a></p>
-    <nav>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="header">
+    <a class="logo" href="#">K. Mwila</a>
+    <nav class="nav">
       <a href="#nutriguide">NutriGuide</a>
       <a href="#projets">Projets</a>
       <a href="#contact">Contact</a>
-      <a href="https://github.com/mwilaalexis">GitHub</a>
     </nav>
   </header>
 
   <main>
-    <section class="intro">
-      <h1>Developpeur .NET (junior)</h1>
-      <p>
-        J'etudie le dev et je cherche un <strong>stage</strong> ou un premier job backend / full-stack.
-        Je travaille surtout avec C#, ASP.NET Core, SQL Server et un peu React.
+    <section class="hero">
+      <p class="hero-label reveal">Portfolio 2026</p>
+      <h1 class="hero-title reveal reveal-d1">
+        <span class="line">Kilolo</span>
+        <span class="line accent">Mwila Alexis</span>
+      </h1>
+      <p class="hero-text reveal reveal-d2">
+        Dev .NET en formation. Je monte des APIs avec C# et un front React.
+        Mon projet fil rouge : <strong>NutriGuide</strong>.
       </p>
-      <p>
-        Mon gros projet c'est <a href="#nutriguide">NutriGuide</a> : une app nutrition decoupee en plusieurs APIs + un site React.
-      </p>
+      <div class="hero-links reveal reveal-d3">
+        <a class="pill" href="#nutriguide">Voir NutriGuide</a>
+        <a class="pill pill-ghost" href="https://github.com/mwilaalexis" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <div class="scroll-hint reveal reveal-d4" aria-hidden="true">
+        <span></span>
+      </div>
     </section>
 
-    <section id="nutriguide">
-      <h2>NutriGuide (systeme complet)</h2>
-      <p>
-        C'est mon projet principal. L'idee : se connecter, voir des aliments, faire un plan repas, gerer son profil.
-        J'ai separe le code en plusieurs repos pour que ce soit plus clair a maintenir.
+    <section id="nutriguide" class="block">
+      <div class="block-head reveal">
+        <span class="num">01</span>
+        <h2>NutriGuide</h2>
+      </div>
+      <p class="reveal">
+        Systeme complet que j'ai construit morceau par morceau : connexion, aliments, plans repas, profil.
+        Cinq depots, un seul objectif.
       </p>
-      <pre class="schema">React (nutri-guide-web)
-    |
-Gateway (nutri-guide-gateway)
-    |
-    +-- nutri-guide-user-service   (login, profil)
-    +-- nutri-guide-food-service   (aliments)
-    +-- nutri-guide-plan-service   (plans repas)</pre>
-      <ul class="repos">
-        <li><a href="https://github.com/mwilaalexis/nutri-guide-web">nutri-guide-web</a> — interface</li>
-        <li><a href="https://github.com/mwilaalexis/nutri-guide-gateway">nutri-guide-gateway</a> — Ocelot, tout passe par la</li>
-        <li><a href="https://github.com/mwilaalexis/nutri-guide-user-service">nutri-guide-user-service</a> — auth JWT, profil, poids</li>
-        <li><a href="https://github.com/mwilaalexis/nutri-guide-food-service">nutri-guide-food-service</a> — catalogue aliments</li>
-        <li><a href="https://github.com/mwilaalexis/nutri-guide-plan-service">nutri-guide-plan-service</a> — plans repas</li>
+
+      <div class="orbit reveal">
+        <div class="orbit-center">Gateway</div>
+        <a class="node node-1" href="https://github.com/mwilaalexis/nutri-guide-web" target="_blank" rel="noopener">
+          <span class="node-name">web</span>
+          <span class="node-role">React</span>
+        </a>
+        <a class="node node-2" href="https://github.com/mwilaalexis/nutri-guide-user-service" target="_blank" rel="noopener">
+          <span class="node-name">user</span>
+          <span class="node-role">Auth</span>
+        </a>
+        <a class="node node-3" href="https://github.com/mwilaalexis/nutri-guide-food-service" target="_blank" rel="noopener">
+          <span class="node-name">food</span>
+          <span class="node-role">Catalogue</span>
+        </a>
+        <a class="node node-4" href="https://github.com/mwilaalexis/nutri-guide-plan-service" target="_blank" rel="noopener">
+          <span class="node-name">plan</span>
+          <span class="node-role">Repas</span>
+        </a>
+        <a class="node node-5" href="https://github.com/mwilaalexis/nutri-guide-gateway" target="_blank" rel="noopener">
+          <span class="node-name">gateway</span>
+          <span class="node-role">Ocelot</span>
+        </a>
+      </div>
+
+      <ul class="repo-list reveal">
+        <li><a href="https://github.com/mwilaalexis/nutri-guide-web">nutri-guide-web</a></li>
+        <li><a href="https://github.com/mwilaalexis/nutri-guide-gateway">nutri-guide-gateway</a></li>
+        <li><a href="https://github.com/mwilaalexis/nutri-guide-user-service">nutri-guide-user-service</a></li>
+        <li><a href="https://github.com/mwilaalexis/nutri-guide-food-service">nutri-guide-food-service</a></li>
+        <li><a href="https://github.com/mwilaalexis/nutri-guide-plan-service">nutri-guide-plan-service</a></li>
       </ul>
-      <p class="small">Chaque repo a un README pour lancer le service en local.</p>
     </section>
 
-    <section id="projets">
-      <h2>Autres projets</h2>
-      <ul>
-        <li><a href="https://github.com/mwilaalexis/personal-portfolio">personal-portfolio</a> — ce site</li>
-        <li><a href="https://github.com/mwilaalexis/coursework-csharp-2024">coursework-csharp-2024</a> — travaux C# 2024</li>
-        <li><a href="https://github.com/mwilaalexis/coursework-csharp-basics">coursework-csharp-basics</a> — bases C#</li>
-      </ul>
+    <section id="projets" class="block">
+      <div class="block-head reveal">
+        <span class="num">02</span>
+        <h2>Autres projets</h2>
+      </div>
+      <div class="cards">
+        <a class="card reveal" href="https://github.com/mwilaalexis/personal-portfolio" target="_blank" rel="noopener">
+          <h3>personal-portfolio</h3>
+          <p>Ce site, heberge sur GitHub Pages.</p>
+        </a>
+        <a class="card reveal" href="https://github.com/mwilaalexis/coursework-csharp-2024" target="_blank" rel="noopener">
+          <h3>coursework-csharp-2024</h3>
+          <p>Travaux C# de 2024.</p>
+        </a>
+        <a class="card reveal" href="https://github.com/mwilaalexis/coursework-csharp-basics" target="_blank" rel="noopener">
+          <h3>coursework-csharp-basics</h3>
+          <p>Exercices de base.</p>
+        </a>
+      </div>
     </section>
 
-    <section id="skills">
-      <h2>Competences</h2>
-      <p>
-        C#, ASP.NET Core, EF Core, SQL Server, REST, JWT, React, TypeScript, Git, Docker (bases), Swagger.
+    <section class="block block-skills">
+      <div class="block-head reveal">
+        <span class="num">03</span>
+        <h2>Stack</h2>
+      </div>
+      <div class="tags reveal">
+        <span class="tag">C#</span>
+        <span class="tag">.NET 8</span>
+        <span class="tag">ASP.NET Core</span>
+        <span class="tag">EF Core</span>
+        <span class="tag">SQL Server</span>
+        <span class="tag">React</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">JWT</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Git</span>
+      </div>
+    </section>
+
+    <section id="contact" class="block block-contact">
+      <div class="block-head reveal">
+        <span class="num">04</span>
+        <h2>Contact</h2>
+      </div>
+      <p class="contact-big reveal">
+        <a href="mailto:mwilaalexis12@gmail.com" class="email-link">mwilaalexis12@gmail.com</a>
       </p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Mail : <a href="mailto:mwilaalexis12@gmail.com">mwilaalexis12@gmail.com</a><br />
-        GitHub : <a href="https://github.com/mwilaalexis">github.com/mwilaalexis</a>
+      <p class="reveal">
+        Stage ou junior .NET — <a href="https://github.com/mwilaalexis">github.com/mwilaalexis</a>
       </p>
     </section>
   </main>
 
-  <footer>
-    <p><span id="year"></span> — Kilolo Mwila Alexis</p>
+  <footer class="footer">
+    <p><span id="year"></span> Kilolo Mwila Alexis</p>
   </footer>
 
   <script src="js/main.js"></script>
