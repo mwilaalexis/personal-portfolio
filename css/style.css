@@ -279,7 +279,10 @@ a:hover {
 }
 
 .scroll-hint {
-  display: none;
+  margin-top: 1.25rem;
+  position: relative;
+  left: 0;
+  bottom: auto;
 }
 
 .scroll-hint span {
@@ -341,12 +344,19 @@ main {
   max-width: 65ch;
 }
 
-/* Orbit - NutriGuide */
+/* Orbit - NutriGuide illustration */
+.orbit-wrap {
+  margin: 1rem auto 0;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+}
+
 .orbit {
   position: relative;
-  width: min(100%, 280px);
-  height: 280px;
-  margin: 1rem auto 0;
+  width: min(100%, 300px);
+  height: 300px;
+  flex-shrink: 0;
 }
 
 .orbit-center {
@@ -439,7 +449,7 @@ main {
   animation: none;
 }
 
-/* Mobile-friendly service list (replaces orbit on small screens) */
+/* Fallback list: hidden when orbit illustration is shown */
 .service-grid {
   display: none;
   list-style: none;
@@ -645,12 +655,25 @@ main {
     display: none;
   }
 
-  .orbit {
-    display: none;
+  .orbit-wrap {
+    margin: 0.75rem -0.5rem 0;
   }
 
-  .service-grid {
-    display: grid;
+  .orbit {
+    width: min(92vw, 280px);
+    height: 280px;
+    transform: scale(0.92);
+    transform-origin: center top;
+  }
+
+  .node {
+    width: 62px;
+    height: 62px;
+  }
+
+  .node-1,
+  .node-4 {
+    margin-left: -31px;
   }
 
   .hero::before {
