@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kilolo Mwila Alexis</title>
+  <meta name="description" content="Kilolo Mwila Alexis - Backend .NET developer. NutriGuide microservices portfolio." />
+  <title>Kilolo Mwila Alexis | Backend Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -14,10 +15,15 @@
 
   <header class="header">
     <a class="logo" href="#">K. Mwila</a>
-    <nav class="nav">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="nav" aria-label="Main navigation">
+      <a href="#about">About</a>
       <a href="#nutriguide">NutriGuide</a>
-      <a href="#projets">Projets</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
+      <a class="nav-github" href="https://github.com/mwilaalexis" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
   </header>
 
@@ -29,51 +35,92 @@
         <span class="line accent">Mwila Alexis</span>
       </h1>
       <p class="hero-text reveal reveal-d2">
-        Dev .NET en formation. Je monte des APIs avec C# et un front React.
-        Mon projet fil rouge : <strong>NutriGuide</strong>.
+        Backend developer in training. I build APIs with C# and a React front end.
+        My main project: <strong>NutriGuide</strong>.
       </p>
       <div class="hero-links reveal reveal-d3">
-        <a class="pill" href="#nutriguide">Voir NutriGuide</a>
-        <a class="pill pill-ghost" href="https://github.com/mwilaalexis" target="_blank" rel="noopener">GitHub</a>
+        <a class="pill" href="#nutriguide">View NutriGuide</a>
+        <a class="pill pill-ghost" href="https://github.com/mwilaalexis" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
       <div class="scroll-hint reveal reveal-d4" aria-hidden="true">
         <span></span>
       </div>
     </section>
 
-    <section id="nutriguide" class="block">
+    <section id="about" class="block">
       <div class="block-head reveal">
         <span class="num">01</span>
+        <h2>About me</h2>
+      </div>
+      <p class="about-text reveal">
+        Backend Developer with strong foundations in C#, ASP.NET Core, SQL Server, and clean architecture.
+        Skilled in building APIs, optimizing code, and applying engineering principles to create scalable
+        and maintainable systems. Motivated to grow in backend-focused environments and contribute to
+        high-quality software solutions.
+      </p>
+    </section>
+
+    <section id="nutriguide" class="block">
+      <div class="block-head reveal">
+        <span class="num">02</span>
         <h2>NutriGuide</h2>
       </div>
       <p class="reveal">
-        Systeme complet que j'ai construit morceau par morceau : connexion, aliments, plans repas, profil.
-        Cinq depots, un seul objectif.
+        A full nutrition system I built step by step: sign-in, food catalog, meal plans, and user profile.
+        Five repositories, one product.
       </p>
 
-      <div class="orbit reveal">
+      <div class="orbit reveal" aria-label="NutriGuide services diagram">
         <div class="orbit-center">Gateway</div>
-        <a class="node node-1" href="https://github.com/mwilaalexis/nutri-guide-web" target="_blank" rel="noopener">
+        <a class="node node-1" href="https://github.com/mwilaalexis/nutri-guide-web" target="_blank" rel="noopener noreferrer">
           <span class="node-name">web</span>
           <span class="node-role">React</span>
         </a>
-        <a class="node node-2" href="https://github.com/mwilaalexis/nutri-guide-user-service" target="_blank" rel="noopener">
+        <a class="node node-2" href="https://github.com/mwilaalexis/nutri-guide-user-service" target="_blank" rel="noopener noreferrer">
           <span class="node-name">user</span>
           <span class="node-role">Auth</span>
         </a>
-        <a class="node node-3" href="https://github.com/mwilaalexis/nutri-guide-food-service" target="_blank" rel="noopener">
+        <a class="node node-3" href="https://github.com/mwilaalexis/nutri-guide-food-service" target="_blank" rel="noopener noreferrer">
           <span class="node-name">food</span>
-          <span class="node-role">Catalogue</span>
+          <span class="node-role">Catalog</span>
         </a>
-        <a class="node node-4" href="https://github.com/mwilaalexis/nutri-guide-plan-service" target="_blank" rel="noopener">
+        <a class="node node-4" href="https://github.com/mwilaalexis/nutri-guide-plan-service" target="_blank" rel="noopener noreferrer">
           <span class="node-name">plan</span>
-          <span class="node-role">Repas</span>
+          <span class="node-role">Meals</span>
         </a>
-        <a class="node node-5" href="https://github.com/mwilaalexis/nutri-guide-gateway" target="_blank" rel="noopener">
+        <a class="node node-5" href="https://github.com/mwilaalexis/nutri-guide-gateway" target="_blank" rel="noopener noreferrer">
           <span class="node-name">gateway</span>
           <span class="node-role">Ocelot</span>
         </a>
       </div>
+
+      <ul class="service-grid reveal" aria-label="NutriGuide repositories">
+        <li>
+          <a href="https://github.com/mwilaalexis/nutri-guide-web" target="_blank" rel="noopener noreferrer">
+            <strong>nutri-guide-web</strong><span>React UI</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/mwilaalexis/nutri-guide-gateway" target="_blank" rel="noopener noreferrer">
+            <strong>nutri-guide-gateway</strong><span>Ocelot API gateway</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/mwilaalexis/nutri-guide-user-service" target="_blank" rel="noopener noreferrer">
+            <strong>nutri-guide-user-service</strong><span>Auth, profiles</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/mwilaalexis/nutri-guide-food-service" target="_blank" rel="noopener noreferrer">
+            <strong>nutri-guide-food-service</strong><span>Food catalog</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/mwilaalexis/nutri-guide-plan-service" target="_blank" rel="noopener noreferrer">
+            <strong>nutri-guide-plan-service</strong><span>Meal plans</span>
+          </a>
+        </li>
+      </ul>
 
       <ul class="repo-list reveal">
         <li><a href="https://github.com/mwilaalexis/nutri-guide-web">nutri-guide-web</a></li>
@@ -84,30 +131,30 @@
       </ul>
     </section>
 
-    <section id="projets" class="block">
+    <section id="projects" class="block">
       <div class="block-head reveal">
-        <span class="num">02</span>
-        <h2>Autres projets</h2>
+        <span class="num">03</span>
+        <h2>Other projects</h2>
       </div>
       <div class="cards">
-        <a class="card reveal" href="https://github.com/mwilaalexis/personal-portfolio" target="_blank" rel="noopener">
+        <a class="card reveal" href="https://github.com/mwilaalexis/personal-portfolio" target="_blank" rel="noopener noreferrer">
           <h3>personal-portfolio</h3>
-          <p>Ce site, heberge sur GitHub Pages.</p>
+          <p>This site, hosted on GitHub Pages.</p>
         </a>
-        <a class="card reveal" href="https://github.com/mwilaalexis/coursework-csharp-2024" target="_blank" rel="noopener">
+        <a class="card reveal" href="https://github.com/mwilaalexis/coursework-csharp-2024" target="_blank" rel="noopener noreferrer">
           <h3>coursework-csharp-2024</h3>
-          <p>Travaux C# de 2024.</p>
+          <p>C# coursework from 2024.</p>
         </a>
-        <a class="card reveal" href="https://github.com/mwilaalexis/coursework-csharp-basics" target="_blank" rel="noopener">
+        <a class="card reveal" href="https://github.com/mwilaalexis/coursework-csharp-basics" target="_blank" rel="noopener noreferrer">
           <h3>coursework-csharp-basics</h3>
-          <p>Exercices de base.</p>
+          <p>C# fundamentals exercises.</p>
         </a>
       </div>
     </section>
 
     <section class="block block-skills">
       <div class="block-head reveal">
-        <span class="num">03</span>
+        <span class="num">04</span>
         <h2>Stack</h2>
       </div>
       <div class="tags reveal">
@@ -126,14 +173,15 @@
 
     <section id="contact" class="block block-contact">
       <div class="block-head reveal">
-        <span class="num">04</span>
+        <span class="num">05</span>
         <h2>Contact</h2>
       </div>
       <p class="contact-big reveal">
         <a href="mailto:mwilaalexis12@gmail.com" class="email-link">mwilaalexis12@gmail.com</a>
       </p>
       <p class="reveal">
-        Stage ou junior .NET — <a href="https://github.com/mwilaalexis">github.com/mwilaalexis</a>
+        Open to internships and junior .NET roles —
+        <a href="https://github.com/mwilaalexis">github.com/mwilaalexis</a>
       </p>
     </section>
   </main>
