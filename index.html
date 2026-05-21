@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kilolo Mwila Alexis - Developpeur .NET et full-stack. Portfolio et projet NutriGuide." />
+  <meta name="description" content="Kilolo Mwila Alexis - Developpeur .NET. Systeme NutriGuide complet : gateway, auth, food, plan, React." />
   <title>Kilolo Mwila Alexis | Developpeur .NET</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,6 +20,7 @@
         Menu
       </button>
       <nav id="nav-principale" class="nav" aria-label="Navigation principale">
+        <a href="#nutriguide">NutriGuide</a>
         <a href="#apropos">A propos</a>
         <a href="#projets">Projets</a>
         <a href="#competences">Competences</a>
@@ -37,10 +38,10 @@
           <h1>Je construis des applications web fiables, de l'API au navigateur.</h1>
           <p class="lead">
             Etudiant-developpeur specialise en microservices ASP.NET Core, React et SQL Server.
-            Projet phare : <strong>NutriGuide</strong>, une plateforme nutrition modulaire.
+            Projet phare : <strong>NutriGuide</strong>, un systeme complet (frontend, gateway et 3 APIs backend).
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+            <a class="btn btn-primary" href="#nutriguide">Systeme NutriGuide</a>
             <a class="btn btn-ghost" href="https://github.com/mwilaalexis" target="_blank" rel="noopener noreferrer">Profil GitHub</a>
           </div>
         </div>
@@ -48,7 +49,7 @@
           <h2>En bref</h2>
           <ul>
             <li><span>Stack</span> C#, React, SQL Server</li>
-            <li><span>Architecture</span> Microservices, REST, JWT</li>
+            <li><span>Projet cle</span> NutriGuide (5 services)</li>
             <li><span>Disponibilite</span> Stage, alternance, junior</li>
             <li><span>Base</span> Belarus / remote</li>
           </ul>
@@ -64,8 +65,94 @@
           injection de dependances, Entity Framework) et des interfaces React modernes.
         </p>
         <p>
-          Mon travail recent porte sur <strong>NutriGuide</strong> : authentification JWT, catalogue aliments,
-          plans repas, gateway Ocelot et SPA TypeScript. J'aime livrer du code lisible, documente et pret pour la revue.
+          Mon projet principal est <strong>NutriGuide</strong> : un systeme nutrition complet que j'ai decoupe en
+          plusieurs services .NET 8, relies par une API Gateway et utilises depuis une application React.
+        </p>
+      </div>
+    </section>
+
+    <section id="nutriguide" class="section section-nutriguide">
+      <div class="container">
+        <h2 class="section-title">NutriGuide - Systeme complet</h2>
+        <p class="section-intro">
+          Application de nutrition modulaire : l'utilisateur se connecte, consulte des aliments, construit des plans repas
+          et suit son profil. Chaque partie du systeme a son propre depot GitHub.
+        </p>
+
+        <div class="system-flow" aria-label="Architecture NutriGuide">
+          <div class="flow-step flow-web">
+            <strong>Frontend</strong>
+            <span>nutri-guide-web</span>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">&#8595;</div>
+          <div class="flow-step flow-gateway">
+            <strong>API Gateway</strong>
+            <span>nutri-guide-gateway</span>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">&#8595;</div>
+          <div class="flow-row">
+            <div class="flow-step">
+              <strong>User Service</strong>
+              <span>Auth, JWT, profils</span>
+            </div>
+            <div class="flow-step">
+              <strong>Food Service</strong>
+              <span>Aliments, ingredients</span>
+            </div>
+            <div class="flow-step">
+              <strong>Plan Service</strong>
+              <span>Plans repas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="system-table-wrap">
+          <table class="system-table">
+            <thead>
+              <tr>
+                <th>Composant</th>
+                <th>Role</th>
+                <th>Technologies</th>
+                <th>Depot</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>nutri-guide-web</td>
+                <td>Interface utilisateur (React)</td>
+                <td>React, TypeScript, Vite</td>
+                <td><a href="https://github.com/mwilaalexis/nutri-guide-web" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+              </tr>
+              <tr>
+                <td>nutri-guide-gateway</td>
+                <td>Point d'entree unique des APIs (Ocelot)</td>
+                <td>.NET 8, Ocelot</td>
+                <td><a href="https://github.com/mwilaalexis/nutri-guide-gateway" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+              </tr>
+              <tr>
+                <td>nutri-guide-user-service</td>
+                <td>Connexion, comptes, profils, suivi du poids</td>
+                <td>.NET 8, EF Core, JWT, Docker</td>
+                <td><a href="https://github.com/mwilaalexis/nutri-guide-user-service" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+              </tr>
+              <tr>
+                <td>nutri-guide-food-service</td>
+                <td>Catalogue aliments et ingredients</td>
+                <td>.NET 8, EF Core, SQL Server</td>
+                <td><a href="https://github.com/mwilaalexis/nutri-guide-food-service" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+              </tr>
+              <tr>
+                <td>nutri-guide-plan-service</td>
+                <td>Creation et gestion des plans repas</td>
+                <td>.NET 8, EF Core, SQL Server</td>
+                <td><a href="https://github.com/mwilaalexis/nutri-guide-plan-service" target="_blank" rel="noopener noreferrer">GitHub</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="system-note">
+          Chaque service possede son README avec instructions de lancement. Le gateway centralise les appels du frontend vers les APIs backend.
         </p>
       </div>
     </section>
@@ -73,29 +160,17 @@
     <section id="projets" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Projets</h2>
-        <p class="section-intro">Selection de depots publics sur GitHub.</p>
+        <p class="section-intro">Autres depots publics en complement du systeme NutriGuide.</p>
 
         <article class="project-featured">
           <div class="project-head">
-            <h3>NutriGuide</h3>
-            <span class="tag">Projet principal</span>
+            <h3>NutriGuide (ensemble)</h3>
+            <span class="tag">5 depots lies</span>
           </div>
           <p>
-            Plateforme nutrition full-stack : microservices .NET, gateway API, frontend React et persistance SQL Server.
+            Voir la section <a href="#nutriguide">Systeme NutriGuide complet</a> pour l'architecture et le role de chaque service.
           </p>
-          <ul class="project-stack">
-            <li>ASP.NET Core 8</li>
-            <li>React / TypeScript</li>
-            <li>Ocelot</li>
-            <li>Docker</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://github.com/mwilaalexis/nutri-guide-web" target="_blank" rel="noopener noreferrer">nutri-guide-web</a>
-            <a href="https://github.com/mwilaalexis/nutri-guide-gateway" target="_blank" rel="noopener noreferrer">nutri-guide-gateway</a>
-            <a href="https://github.com/mwilaalexis/nutri-guide-user-service" target="_blank" rel="noopener noreferrer">nutri-guide-user-service</a>
-            <a href="https://github.com/mwilaalexis/nutri-guide-food-service" target="_blank" rel="noopener noreferrer">nutri-guide-food-service</a>
-            <a href="https://github.com/mwilaalexis/nutri-guide-plan-service" target="_blank" rel="noopener noreferrer">nutri-guide-plan-service</a>
-          </div>
+          <a class="btn btn-primary" href="#nutriguide">Architecture du systeme</a>
         </article>
 
         <div class="project-grid">

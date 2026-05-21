@@ -288,6 +288,120 @@ img {
   margin: -0.5rem 0 2rem;
 }
 
+/* NutriGuide system */
+.section-nutriguide {
+  background: linear-gradient(180deg, #fff 0%, var(--bg) 100%);
+  border-bottom: 1px solid var(--border);
+}
+
+.system-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  padding: 2rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.flow-step {
+  text-align: center;
+  padding: 1rem 1.5rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  min-width: min(100%, 280px);
+}
+
+.flow-step strong {
+  display: block;
+  color: var(--navy);
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.flow-step span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.flow-web {
+  border-color: var(--accent);
+  background: rgba(59, 111, 217, 0.06);
+}
+
+.flow-gateway {
+  border-left: 4px solid var(--navy);
+}
+
+.flow-arrow {
+  color: var(--accent);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.flow-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.flow-row .flow-step {
+  flex: 1 1 160px;
+  max-width: 220px;
+}
+
+.system-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.system-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.system-table th,
+.system-table td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.system-table th {
+  background: var(--bg);
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.system-table td:first-child {
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.system-table tr:last-child td {
+  border-bottom: none;
+}
+
+.system-note {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
 /* Projects */
 .project-featured {
   background: var(--surface);
