@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kilolo Mwila Alexis - Developpeur backend .NET, projet NutriGuide." />
+  <meta name="description" content="Kilolo Mwila Alexis - Developpeur .NET et full-stack. Portfolio et projet NutriGuide." />
   <title>Kilolo Mwila Alexis | Developpeur .NET</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,152 +13,159 @@
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-  <div class="layout">
-    <aside class="sidebar" aria-label="Informations personnelles">
-      <div class="sidebar-inner">
-        <img class="profile-photo" src="https://avatars.githubusercontent.com/u/151351997?v=4" alt="Photo de Kilolo Mwila Alexis" width="220" height="220" />
-
-        <section class="sidebar-block">
-          <h2>Formation</h2>
-          <p class="edu-title">Bachelor of Design</p>
-          <p class="edu-school">Sukhoi State Technical University</p>
-          <p class="edu-dates">2021 - 2026</p>
-        </section>
-
-        <section class="sidebar-block">
-          <h2>Langues</h2>
-          <ul class="lang-list">
-            <li>Francais</li>
-            <li>Anglais</li>
-            <li>Russe</li>
-          </ul>
-        </section>
-
-        <section class="sidebar-block">
-          <h2>Competences</h2>
-          <div class="skill-tags">
-            <span>ASP.NET Core</span>
-            <span>C#</span>
-            <span>EF Core</span>
-            <span>SQL Server</span>
-            <span>REST API</span>
-            <span>JWT</span>
-            <span>React</span>
-            <span>TypeScript</span>
-            <span>Docker</span>
-            <span>Git</span>
-            <span>AutoMapper</span>
-            <span>Repository pattern</span>
-            <span>Ocelot</span>
-          </div>
-        </section>
-
-        <section class="sidebar-block sidebar-contact">
-          <h2>Contact</h2>
-          <ul class="contact-list">
-            <li><a href="mailto:mwilaalexis12@gmail.com">mwilaalexis12@gmail.com</a></li>
-            <li><a href="https://github.com/mwilaalexis" target="_blank" rel="noopener noreferrer">github.com/mwilaalexis</a></li>
-          </ul>
-        </section>
-      </div>
-    </aside>
-
-    <div class="main-panel">
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
-      <nav id="mobile-nav" class="mobile-nav" aria-label="Navigation">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">K. Mwila</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principale">
+        Menu
+      </button>
+      <nav id="nav-principale" class="nav" aria-label="Navigation principale">
         <a href="#apropos">A propos</a>
         <a href="#projets">Projets</a>
+        <a href="#competences">Competences</a>
         <a href="#contact">Contact</a>
+        <a class="nav-cta" href="https://github.com/mwilaalexis" target="_blank" rel="noopener noreferrer">GitHub</a>
       </nav>
-
-      <main id="contenu">
-        <header class="hero">
-          <p class="hero-role">Software Engineer</p>
-          <h1>Kilolo Mwila Alexis</h1>
-          <p class="hero-summary">
-            Developpeur backend avec des bases solides en C#, ASP.NET Core et SQL Server.
-            Je construis des APIs claires, du code maintenable et des projets adaptes a un profil junior / stage.
-          </p>
-          <div class="hero-cta">
-            <a class="btn btn-light" href="#projets">Mes projets</a>
-            <a class="btn btn-outline" href="mailto:mwilaalexis12@gmail.com">Me contacter</a>
-          </div>
-        </header>
-
-        <section id="apropos" class="block">
-          <h2 class="block-title">Profil professionnel</h2>
-          <p>
-            Passionne par le developpement logiciel et l'architecture propre (repository pattern,
-            injection de dependances, principes SOLID). J'aime transformer une idee en API fonctionnelle
-            et en application utilisable.
-          </p>
-          <p>
-            <strong>Objectif actuel :</strong> stage ou premier poste en developpement .NET / backend.
-          </p>
-        </section>
-
-        <section id="projets" class="block">
-          <h2 class="block-title">Projets</h2>
-          <p class="block-intro">NutriGuide - systeme modulaire (microservices .NET 8 + React).</p>
-
-          <article class="project">
-            <div class="project-top">
-              <h3>Food Plan Service</h3>
-              <span class="badge">.NET 8</span>
-            </div>
-            <p>API pour generer et gerer des plans repas personnalises.</p>
-            <p class="tech">ASP.NET Core, EF Core, AutoMapper, SQL Server</p>
-            <a href="https://github.com/mwilaalexis/nutri-guide-plan-service" target="_blank" rel="noopener noreferrer">Voir le code</a>
-          </article>
-
-          <article class="project">
-            <div class="project-top">
-              <h3>Auth and User Profile Service</h3>
-              <span class="badge">.NET 8</span>
-            </div>
-            <p>Authentification JWT, gestion des profils et suivi du poids.</p>
-            <p class="tech">ASP.NET Core, EF Core, SQL Server, Docker</p>
-            <a href="https://github.com/mwilaalexis/nutri-guide-user-service" target="_blank" rel="noopener noreferrer">Voir le code</a>
-          </article>
-
-          <article class="project">
-            <div class="project-top">
-              <h3>Food and Ingredient Service</h3>
-              <span class="badge">.NET 8</span>
-            </div>
-            <p>Catalogue d'aliments et d'ingredients pour l'application nutrition.</p>
-            <p class="tech">C#, ASP.NET Core, SQL Server</p>
-            <a href="https://github.com/mwilaalexis/nutri-guide-food-service" target="_blank" rel="noopener noreferrer">Voir le code</a>
-          </article>
-
-          <article class="project project-secondary">
-            <div class="project-top">
-              <h3>NutriGuide - ecosysteme complet</h3>
-            </div>
-            <p>Gateway API, frontend React et documentation sur GitHub.</p>
-            <div class="link-row">
-              <a href="https://github.com/mwilaalexis/nutri-guide-gateway" target="_blank" rel="noopener noreferrer">Gateway</a>
-              <a href="https://github.com/mwilaalexis/nutri-guide-web" target="_blank" rel="noopener noreferrer">Web</a>
-              <a href="https://github.com/mwilaalexis?tab=repositories" target="_blank" rel="noopener noreferrer">Tous les repos</a>
-            </div>
-          </article>
-        </section>
-
-        <section id="contact" class="block block-contact">
-          <h2 class="block-title">Contact</h2>
-          <p>Un stage, une alternance ou un poste junior ? Ecrivez-moi.</p>
-          <div class="contact-row">
-            <a class="btn btn-light" href="mailto:mwilaalexis12@gmail.com">mwilaalexis12@gmail.com</a>
-            <a class="btn btn-outline" href="https://github.com/mwilaalexis" target="_blank" rel="noopener noreferrer">GitHub</a>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <p>&copy; <span id="year"></span> Kilolo Mwila Alexis</p>
-      </footer>
     </div>
-  </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Developpeur .NET &amp; full-stack</p>
+          <h1>Je construis des applications web fiables, de l'API au navigateur.</h1>
+          <p class="lead">
+            Etudiant-developpeur specialise en microservices ASP.NET Core, React et SQL Server.
+            Projet phare : <strong>NutriGuide</strong>, une plateforme nutrition modulaire.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+            <a class="btn btn-ghost" href="https://github.com/mwilaalexis" target="_blank" rel="noopener noreferrer">Profil GitHub</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Resume technique">
+          <h2>En bref</h2>
+          <ul>
+            <li><span>Stack</span> C#, React, SQL Server</li>
+            <li><span>Architecture</span> Microservices, REST, JWT</li>
+            <li><span>Disponibilite</span> Stage, alternance, junior</li>
+            <li><span>Base</span> Belarus / remote</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="apropos" class="section">
+      <div class="container narrow">
+        <h2 class="section-title">A propos</h2>
+        <p>
+          Je m'appelle <strong>Kilolo Mwila Alexis</strong>. Je developpe des backends structures (repository pattern,
+          injection de dependances, Entity Framework) et des interfaces React modernes.
+        </p>
+        <p>
+          Mon travail recent porte sur <strong>NutriGuide</strong> : authentification JWT, catalogue aliments,
+          plans repas, gateway Ocelot et SPA TypeScript. J'aime livrer du code lisible, documente et pret pour la revue.
+        </p>
+      </div>
+    </section>
+
+    <section id="projets" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Projets</h2>
+        <p class="section-intro">Selection de depots publics sur GitHub.</p>
+
+        <article class="project-featured">
+          <div class="project-head">
+            <h3>NutriGuide</h3>
+            <span class="tag">Projet principal</span>
+          </div>
+          <p>
+            Plateforme nutrition full-stack : microservices .NET, gateway API, frontend React et persistance SQL Server.
+          </p>
+          <ul class="project-stack">
+            <li>ASP.NET Core 8</li>
+            <li>React / TypeScript</li>
+            <li>Ocelot</li>
+            <li>Docker</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/mwilaalexis/nutri-guide-web" target="_blank" rel="noopener noreferrer">nutri-guide-web</a>
+            <a href="https://github.com/mwilaalexis/nutri-guide-gateway" target="_blank" rel="noopener noreferrer">nutri-guide-gateway</a>
+            <a href="https://github.com/mwilaalexis/nutri-guide-user-service" target="_blank" rel="noopener noreferrer">nutri-guide-user-service</a>
+            <a href="https://github.com/mwilaalexis/nutri-guide-food-service" target="_blank" rel="noopener noreferrer">nutri-guide-food-service</a>
+            <a href="https://github.com/mwilaalexis/nutri-guide-plan-service" target="_blank" rel="noopener noreferrer">nutri-guide-plan-service</a>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Portfolio</h3>
+            <p>Site personnel responsive, heberge sur GitHub Pages.</p>
+            <a href="https://github.com/mwilaalexis/personal-portfolio" target="_blank" rel="noopener noreferrer">Code source</a>
+          </article>
+          <article class="project-card">
+            <h3>Coursework C#</h3>
+            <p>Travaux academiques et exercices fondamentaux en C#.</p>
+            <a href="https://github.com/mwilaalexis/coursework-csharp-2024" target="_blank" rel="noopener noreferrer">2024</a>
+            <a href="https://github.com/mwilaalexis/coursework-csharp-basics" target="_blank" rel="noopener noreferrer">Basics</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="competences" class="section">
+      <div class="container">
+        <h2 class="section-title">Competences</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <ul>
+              <li>C# / .NET 8</li>
+              <li>ASP.NET Core Web API</li>
+              <li>Entity Framework Core</li>
+              <li>SQL Server</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Frontend</h3>
+            <ul>
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>HTML / CSS</li>
+              <li>Vite</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Outils &amp; pratiques</h3>
+            <ul>
+              <li>Git / GitHub</li>
+              <li>Docker</li>
+              <li>REST, JWT</li>
+              <li>Swagger, tests unitaires</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container narrow contact-block">
+        <h2 class="section-title">Contact</h2>
+        <p>Interesse par une collaboration, un stage ou un premier poste ? Ecrivez-moi ou consultez mon GitHub.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:mwilaalexis12@gmail.com">mwilaalexis12@gmail.com</a>
+          <a class="btn btn-ghost" href="https://github.com/mwilaalexis" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Kilolo Mwila Alexis. Code sur <a href="https://github.com/mwilaalexis/personal-portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+    </div>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>
