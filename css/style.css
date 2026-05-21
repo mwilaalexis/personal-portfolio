@@ -600,18 +600,8 @@ main {
   }
 
   .orbit {
-    width: min(100%, 260px);
-    height: 260px;
-  }
-
-  .node {
-    width: 68px;
-    height: 68px;
-  }
-
-  .node-1,
-  .node-4 {
-    margin-left: -34px;
+    width: min(100%, 280px);
+    height: 280px;
   }
 }
 
