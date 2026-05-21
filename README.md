@@ -1,14 +1,30 @@
 # Personal Portfolio
 
-Personal portfolio website built with HTML and CSS.
+Site portfolio d'Alex Mwila : developpeur .NET et full-stack.
 
-## Contents
+## Demo
 
-Static pages showcasing projects and skills. Suitable for hosting on GitHub Pages or any static file host.
+Hebergement GitHub Pages : [https://mwilaalexis.github.io/personal-portfolio/](https://mwilaalexis.github.io/personal-portfolio/)
 
-## Run locally
+## Structure
 
-Open `index.html` in a browser, or serve the folder with any static HTTP server.
+```
+index.html
+css/style.css
+js/main.js
+```
+
+## Developpement local
+
+Ouvrir `index.html` dans un navigateur, ou :
+
+```bash
+npx --yes serve .
+```
+
+## Personnalisation
+
+Remplacez le lien `mailto` dans `index.html` par votre e-mail professionnel et ajoutez un lien LinkedIn dans la section Contact.
 
 ## Author
 

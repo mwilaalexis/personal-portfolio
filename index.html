@@ -1,63 +1,173 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="jrm.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alex Mwila - Developpeur .NET et full-stack. Portfolio et projet NutriGuide." />
+  <title>Alex Mwila | Developpeur .NET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-        <nav >
-            <h1 class="logo"> congo</h1>
-                <ul class="listNav">
-                    <li><a href="https://www.agencedebord.com/blog/10-sites-e-commerce-tailles-pour-la-vente-en-ligne-de-vetements" target="_blank">alimentation</a></li>
-                    <li><a href="">vêtements</a></li>
-                    <li><a href="">voiture</a></li>
-                    <li><a href="">appartement</a></li>
-                </ul>
-          
-            
-        </nav>
-    <div ciasse="contenair">
-        <div>
-            <h1>
-                Bienvenue sur notre site de vente en ligne
-            </h1>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-            <p>
-                    Notre site de vente en ligne est votre guichet unique pour acheter des aliments, des voitures, des vêtements et des appartements. Nous sommes fiers de vous offrir une expérience de magasinage en ligne facile et pratique. Nous avons une grande variété de produits de qualité à des prix compétitifs. Nous sommes convaincus que vous trouverez ce que vous cherchez sur notre site.
-            </p>
-
-            <ul>
-               <li> <h2>Aliments</h2></li>
-            </ul>
-                 <p>   Nous proposons une large gamme d'aliments frais et sains pour répondre à tous vos besoins alimentaires. Nous nous engageons à fournir des produits de qualité supérieure à des prix abordables. Nous sommes fiers de travailler avec des producteurs locaux pour vous offrir des produits frais et de saison.</p>
-        <div class="carrocelle"> 
-            <img src="image alm/arrangement-vue-dessus-aliments-sains.jpg" alt="">
-            <img src="image alm/arrangement-aliments-sains-vue-dessus.jpg" alt="">
-            <img src="image alm/nourriture-delicieuse-table-nature-morte.jpg" alt="">
-            <img src="image alm/vue-ci-dessus-arrangement-noix-carton-lait.jpg" alt="">
-        </div>
-            <ul>
-               <li> Voitures</li>
-            </ul>
-                  <p> Nous avons une grande sélection de voitures neuves et d'occasion pour répondre à tous vos besoins de transport. Nous travaillons avec des concessionnaires de confiance pour vous offrir les meilleurs prix et les meilleurs services. Nous sommes convaincus que vous trouverez la voiture de vos rêves sur notre site.</p>  
-            
-            
-            <ul>
-              <li>  Vêtements</li>
-            </ul>
-              <p> Nous proposons une large gamme de vêtements pour hommes, femmes et enfants. Nous sommes fiers de travailler avec des designers de renom pour vous offrir des vêtements de qualité supérieure à des prix abordables. Nous sommes convaincus que vous trouverez les vêtements que vous cherchez sur notre site.</p>
- <ul> 
-     <li>Appartements</li>
-</ul>
-<p>
-Nous avons une grande sélection d'appartements de qualité supérieure pour répondre à tous vos besoins de logement. Nous travaillons avec des propriétaires de confiance pour vous offrir les meilleurs prix et les meilleurs services. Nous sommes convaincus que vous trouverez l'appartement de vos rêves sur notre site.</p>
-
-<p>Nous espérons que vous apprécierez votre expérience de magasinage en ligne sur notre site. Si vous avez des questions ou des commentaires, n'hésitez pas à nous contacter. Nous sommes là pour vous aider à trouver ce que vous cherchez.</p>
-            
-        </div>
-        
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Alex Mwila</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principale">
+        Menu
+      </button>
+      <nav id="nav-principale" class="nav" aria-label="Navigation principale">
+        <a href="#apropos">A propos</a>
+        <a href="#projets">Projets</a>
+        <a href="#competences">Competences</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="https://github.com/mwilaalexis" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
     </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Developpeur .NET &amp; full-stack</p>
+          <h1>Je construis des applications web fiables, de l'API au navigateur.</h1>
+          <p class="lead">
+            Etudiant-developpeur specialise en microservices ASP.NET Core, React et SQL Server.
+            Projet phare : <strong>NutriGuide</strong>, une plateforme nutrition modulaire.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+            <a class="btn btn-ghost" href="https://github.com/mwilaalexis" target="_blank" rel="noopener noreferrer">Profil GitHub</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Resume technique">
+          <h2>En bref</h2>
+          <ul>
+            <li><span>Stack</span> C#, React, SQL Server</li>
+            <li><span>Architecture</span> Microservices, REST, JWT</li>
+            <li><span>Disponibilite</span> Stage, alternance, junior</li>
+            <li><span>Base</span> Belgique / remote</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="apropos" class="section">
+      <div class="container narrow">
+        <h2 class="section-title">A propos</h2>
+        <p>
+          Je m'appelle <strong>Alex Mwila</strong>. Je developpe des backends structures (repository pattern,
+          injection de dependances, Entity Framework) et des interfaces React modernes.
+        </p>
+        <p>
+          Mon travail recent porte sur <strong>NutriGuide</strong> : authentification JWT, catalogue aliments,
+          plans repas, gateway Ocelot et SPA TypeScript. J'aime livrer du code lisible, documente et pret pour la revue.
+        </p>
+      </div>
+    </section>
+
+    <section id="projets" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Projets</h2>
+        <p class="section-intro">Selection de depots publics sur GitHub.</p>
+
+        <article class="project-featured">
+          <div class="project-head">
+            <h3>NutriGuide</h3>
+            <span class="tag">Projet principal</span>
+          </div>
+          <p>
+            Plateforme nutrition full-stack : microservices .NET, gateway API, frontend React et persistance SQL Server.
+          </p>
+          <ul class="project-stack">
+            <li>ASP.NET Core 8</li>
+            <li>React / TypeScript</li>
+            <li>Ocelot</li>
+            <li>Docker</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/mwilaalexis/nutri-guide-web" target="_blank" rel="noopener noreferrer">nutri-guide-web</a>
+            <a href="https://github.com/mwilaalexis/nutri-guide-gateway" target="_blank" rel="noopener noreferrer">nutri-guide-gateway</a>
+            <a href="https://github.com/mwilaalexis/nutri-guide-user-service" target="_blank" rel="noopener noreferrer">nutri-guide-user-service</a>
+            <a href="https://github.com/mwilaalexis/nutri-guide-food-service" target="_blank" rel="noopener noreferrer">nutri-guide-food-service</a>
+            <a href="https://github.com/mwilaalexis/nutri-guide-plan-service" target="_blank" rel="noopener noreferrer">nutri-guide-plan-service</a>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Portfolio</h3>
+            <p>Site personnel responsive, heberge sur GitHub Pages.</p>
+            <a href="https://github.com/mwilaalexis/personal-portfolio" target="_blank" rel="noopener noreferrer">Code source</a>
+          </article>
+          <article class="project-card">
+            <h3>Coursework C#</h3>
+            <p>Travaux academiques et exercices fondamentaux en C#.</p>
+            <a href="https://github.com/mwilaalexis/coursework-csharp-2024" target="_blank" rel="noopener noreferrer">2024</a>
+            <a href="https://github.com/mwilaalexis/coursework-csharp-basics" target="_blank" rel="noopener noreferrer">Basics</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="competences" class="section">
+      <div class="container">
+        <h2 class="section-title">Competences</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <ul>
+              <li>C# / .NET 8</li>
+              <li>ASP.NET Core Web API</li>
+              <li>Entity Framework Core</li>
+              <li>SQL Server</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Frontend</h3>
+            <ul>
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>HTML / CSS</li>
+              <li>Vite</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Outils &amp; pratiques</h3>
+            <ul>
+              <li>Git / GitHub</li>
+              <li>Docker</li>
+              <li>REST, JWT</li>
+              <li>Swagger, tests unitaires</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container narrow contact-block">
+        <h2 class="section-title">Contact</h2>
+        <p>Interesse par une collaboration, un stage ou un premier poste ? Ecrivez-moi ou consultez mon GitHub.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://github.com/mwilaalexis" target="_blank" rel="noopener noreferrer">github.com/mwilaalexis</a>
+          <a class="btn btn-ghost" href="mailto:mwilaalexis@users.noreply.github.com">Message via GitHub</a>
+        </div>
+        <p class="contact-note">Ajoutez votre e-mail professionnel ou LinkedIn dans ce depot pour activer un lien direct.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Alex Mwila. Code sur <a href="https://github.com/mwilaalexis/personal-portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
